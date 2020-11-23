@@ -1,0 +1,14 @@
+{
+  "name": "pocket-bot",
+  "version": "1.0.0",
+  "description": "Open-source moderation discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Pocket, Inc.",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.0"
+  }
+}

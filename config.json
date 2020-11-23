@@ -1,0 +1,8 @@
+{
+  "token": "BOT TOKEN",
+  "prefix": "%",
+  "owner": "OWNER ID",
+  "embed_color": "#68EC29",
+  "emoji_x": "x",
+  "emoji_success": "white_check_mark"
+}
