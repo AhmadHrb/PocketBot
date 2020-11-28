@@ -9,6 +9,7 @@
   "author": "Pocket, Inc.",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^12.5.0"
+    "discord.js": "^12.5.0",
+    "xliff": "^5.3.1"
   }
 }

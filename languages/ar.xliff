@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file id="2" original="/ban.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="2" translate="no" approved="yes">
+        <source>ban</source>
+        <target state="final">حظر</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="4" approved="yes">
+        <source>Bans a mentioned user</source>
+        <target state="final">حظر المستخدم المذكور</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="6" translate="no" approved="yes">
+        <source>ban @user</source>
+        <target state="final">ban @user</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="8" translate="no" approved="yes">
+        <source>BAN_MEMBERS</source>
+        <target state="final">BAN_MEMBERS</target>
+        <note from="Crowdin" priority="2">needs</note>
+      </trans-unit>
+      <trans-unit id="10" translate="no">
+        <source>png</source>
+        <target>png</target>
+        <note from="Crowdin" priority="2">sendEmbed.sendEm.format</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file id="4" original="/baninfo.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="12" translate="no">
+        <source>baninfo</source>
+        <target>baninfo</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="14" approved="yes">
+        <source>Gets ban information</source>
+        <target state="final">الحصول على معلومات الحظر</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="16" translate="no">
+        <source>baninfo @user</source>
+        <target>baninfo @user</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="18" translate="no">
+        <source>BAN_MEMBERS</source>
+        <target>BAN_MEMBERS</target>
+        <note from="Crowdin" priority="2">needs</note>
+      </trans-unit>
+      <trans-unit id="20" translate="no">
+        <source>png</source>
+        <target>png</target>
+        <note from="Crowdin" priority="2">sendEmbed.sendEm.format</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file id="6" original="/kick.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="22" translate="no">
+        <source>kick</source>
+        <target>kick</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="24" approved="yes">
+        <source>Kicks a mentioned user</source>
+        <target state="final">طرد المستخدم المذكور</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="26" translate="no">
+        <source>kick @user</source>
+        <target>kick @user</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="28" translate="no">
+        <source>KICK_MEMBERS</source>
+        <target>KICK_MEMBERS</target>
+        <note from="Crowdin" priority="2">needs</note>
+      </trans-unit>
+      <trans-unit id="30" translate="no">
+        <source>png</source>
+        <target>png</target>
+        <note from="Crowdin" priority="2">sendEmbed.sendEm.format</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file id="8" original="/mute.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="32" translate="no">
+        <source>mute</source>
+        <target state="translated">mute</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="34" approved="yes">
+        <source>Mute a user</source>
+        <target state="final">كتم المستخدم</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="36" translate="no">
+        <source>mute @user reason</source>
+        <target state="translated">mute @user reason</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="38" translate="no">
+        <source>MUTE_MEMBERS</source>
+        <target state="translated">MUTE_MEMBERS</target>
+        <note from="Crowdin" priority="2">needs</note>
+      </trans-unit>
+      <trans-unit id="40" translate="no">
+        <source>GREY</source>
+        <target state="translated">GREY</target>
+        <note from="Crowdin" priority="2">execute.data.color</note>
+      </trans-unit>
+      <trans-unit id="42" approved="yes">
+        <source>0</source>
+        <target state="final">0</target>
+        <note from="Crowdin" priority="2">execute.data.position</note>
+      </trans-unit>
+      <trans-unit id="44" approved="yes">
+        <source>Muted</source>
+        <target state="final">Muted</target>
+        <note from="Crowdin" priority="2">execute.data.name</note>
+      </trans-unit>
+      <trans-unit id="46" approved="yes">
+        <source>0</source>
+        <target state="final">0</target>
+        <note from="Crowdin" priority="2">execute.data.permissions</note>
+      </trans-unit>
+      <trans-unit id="48" approved="yes">
+        <source>Role needed for Muted Members</source>
+        <target state="final">الدور المطلوب للأعضاء الصامطين</target>
+        <note from="Crowdin" priority="2">execute.reason</note>
+      </trans-unit>
+      <trans-unit id="50" approved="yes">
+        <source>SEND_MESSAGES</source>
+        <target state="final">SEND_MESSAGES</target>
+        <note from="Crowdin" priority="2">execute.deny[0]</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file id="10" original="/ping.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="52" translate="no">
+        <source>ping</source>
+        <target>ping</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="54" translate="no">
+        <source>Ping!</source>
+        <target state="translated">بونج!</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="56" translate="no">
+        <source>ping</source>
+        <target>ping</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="58" translate="no">
+        <source>png</source>
+        <target>png</target>
+        <note from="Crowdin" priority="2">execute.sendEm.format</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file id="12" original="/tempban.js" source-language="en" target-language="ar" datatype="plaintext" project-id="430234" tool-id="crowdin">
+    <header>
+      <tool tool-id="crowdin" tool-name="Crowdin" tool-version="1.1"/>
+    </header>
+    <body>
+      <trans-unit id="60" translate="no">
+        <source>tempban</source>
+        <target>tempban</target>
+        <note from="Crowdin" priority="2">name</note>
+      </trans-unit>
+      <trans-unit id="62" approved="yes">
+        <source>Bans a mentioned user for a time</source>
+        <target state="final">يحظر المستخدم المذكور لفترة</target>
+        <note from="Crowdin" priority="2">description</note>
+      </trans-unit>
+      <trans-unit id="64" translate="no">
+        <source>tempban minutes @user</source>
+        <target>tempban minutes @user</target>
+        <note from="Crowdin" priority="2">usage</note>
+      </trans-unit>
+      <trans-unit id="66" translate="no">
+        <source>BAN_MEMBERS</source>
+        <target>BAN_MEMBERS</target>
+        <note from="Crowdin" priority="2">needs</note>
+      </trans-unit>
+      <trans-unit id="68" approved="yes">
+        <source>png</source>
+        <target state="final">png</target>
+        <note from="Crowdin" priority="2">sendEmbed.sendEm.format</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
