@@ -1,4 +1,11 @@
 ## Changelogs - [Pocket Bot]
+#### v1.2
+```
+- Settings Command.
+- Warn Command.
+- Warns Command.
+- UnWarn Command.
+```
 #### v1.1
 ```
 - UserInfo Command.

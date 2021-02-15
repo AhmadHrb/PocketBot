@@ -1,7 +1,9 @@
 {
-  "token": "BOT TOKEN",
-  "prefix": "%",
-  "owner": "OWNER ID",
+  "token": "DISCORD_TOKEN",
+  "mongodb": "MONGO_URL",
+  "prefix": "t%",
+  "game": "Open Source ❤️",
+  "owner": "265918159335325696",
   "embed_color": "#68EC29",
   "emoji_x": "x",
   "emoji_success": "white_check_mark"
