@@ -234,15 +234,19 @@ client.noPerm = function (message, perm) {
     message.channel.send(sendEm);
 }
 // Load Commands
-client.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
-    client.commands.set(command.name, command);
-    if (command.alias) {
-        client.commands.set(command.alias, command)
+function loadCommands() {
+    client.commands = new Discord.Collection();
+    const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+    for (const file of commandFiles) {
+        const command = require(`./commands/${file}`);
+        client.commands.set(command.name, command);
+        if (command.alias) {
+            client.commands.set(command.alias, command)
+        }
     }
 }
+loadCommands()
+
 client.sendEmbed = function(message, client, title, desc, footer) {
     let sendEm = new Discord.MessageEmbed()
         .setColor(client.color)
