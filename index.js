@@ -8,7 +8,7 @@
 
 // Discord
 const Discord = require("discord.js");
-const client = new Discord.Client();
+const client = new Discord.Client({disableMentions: "everyone"});
 
 // File System
 const fs = require("fs");

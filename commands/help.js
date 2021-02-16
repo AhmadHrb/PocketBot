@@ -22,7 +22,7 @@ module.exports = {
         for (const file of commandFiles) {
             const command = require(`./${file}`);
             if (command.hide === true) return;
-            embed.addField(command.name, command.usage + "```" + command.description + "```")
+            embed.addField(command.name, command.usage + "```" + command.description + "```",true)
         }
     }
 }

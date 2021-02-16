@@ -10,6 +10,7 @@ module.exports = {
             .setThumbnail(message.guild.displayAvatarURL({dynamic: true}))
             .setColor(config.embed_color)
             .setTimestamp()
-            .addField("")
+            .addField("Region",message.guild.region)
+            .addField("Roles",message.guild.roles.cache.map(role => "<@" + role.id + ">, "))
     }
 }
