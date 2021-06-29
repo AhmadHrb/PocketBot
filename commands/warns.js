@@ -6,8 +6,8 @@ module.exports = {
     needs: "KICK_MEMBERS",
     usage: "warns <@user>",
     execute(message,args,client) {
-        if (!args[0] || !message.guild.cache.has(args[0].slice(2,-1)) && !client.users.cache.has(args[0].slice(3,-1))) return client.usage(message,"warns")
-        let user = message.guild.cache.get(args[0].slice(2,-1)) || client.users.cache.get(args[0].slice(3,-1))
+        if (!args[0] || !message.guild.members.cache.has(args[0].slice(2,-1)) && !client.users.cache.has(args[0].slice(3,-1))) return client.usage(message,"warns")
+        let user = message.guild.members.cache.get(args[0].slice(2,-1)) || client.users.cache.get(args[0].slice(3,-1))
         var warn = { guild: message.guild.id, user: user.id };
         client.db.db("pocket_bot").collection("warns").find(warn).toArray(function (err, res) {
             if (err) throw err;

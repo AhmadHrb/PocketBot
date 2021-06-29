@@ -18,11 +18,16 @@ module.exports = {
                 })
             );
 
-        const commandFiles = fs.readdirSync('./').filter(file => file.endsWith('.js'));
+        const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
         for (const file of commandFiles) {
             const command = require(`./${file}`);
-            if (command.hide === true) return;
-            embed.addField(command.name, command.usage + "```" + command.description + "```",true)
-        }
+            console.log(command.name)
+            if (command.hide === true) {
+
+            } else {
+                embed.addField(command.name, command.usage + "```" + command.description + "```", true)
+            }
+            }
+        message.channel.send(embed)
     }
 }

@@ -1,11 +1,12 @@
 const Discord = require("discord.js")
 const config = require("../config.json")
+const userinfoConfig = require("../config/userinfo.json")
 module.exports = {
     name: "userinfo",
     description: "Get information about user",
     usage: "userinfo @user",
     execute(message,args,client) {
-        let user = message.mentions.members.first() || message.member;
+        let user = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
         if (!user) return client.usage(message,"userinfo");
         let activity = user.user.presence.activities[0] || "None";
         let nick = user.nickname || "None";
@@ -18,9 +19,9 @@ module.exports = {
 
         let Embed = new Discord.MessageEmbed()
             .setAuthor(user.user.tag,user.user.displayAvatarURL({dynamic:true}))
-            .addField("Status:","```" + user.user.presence.status + "```",true)
+            .addField("Status:","```" + userinfoConfig.status[user.presence.status] + "```",true)
             .addField("Activity:","```" + activity + "```",true)
-            .addField("Nick:","```" + nick + "```",true)
+            .addField("Nick:","```" + nick + "```")
             .addField("Type:","```" + type + "```",true)
             .addField("Boosting?","```" + boosting + "```",true)
             .addField("Avatar:","[Click Me](" + user.user.displayAvatarURL() + ")",true)

@@ -20,6 +20,7 @@ module.exports = {
                     dynamic: true
                 })
             );
+        message.channel.send(embed)
 
     }
     }

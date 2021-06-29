@@ -44,12 +44,17 @@ client.on("ready",function () {
 })
 client.on("message",function (message) {
     if (message.author.bot || !message.guild || !message.content.startsWith(prefix)) return;
-    const args = message.content.slice(prefix.length).trim().split(" ");
-    const command = args.shift().toLowerCase();
+    try {
+        const args = message.content.slice(prefix.length).trim().split(" ");
+        const command = args.shift().toLowerCase();
 
-    if (client.commands.has(command)) {
-        if (client.commands.get(command).needs) if (!message.member.hasPermission(client.commands.get(command).needs)) return client.noPerm(message,client.commands.get(command).needs);
-        client.commands.get(command).execute(message, args, client);
+        if (client.commands.has(command)) {
+            if (client.commands.get(command).needs) if (!message.guild.me.hasPermission(client.commands.get(command).needs)) return client.sendEmbed(message,client,`:${config.emoji_x}: No Permission`,`I don't have the **${client.commands.get(command).needs}** Permission!`)
+            if (client.commands.get(command).needs) if (!message.member.hasPermission(client.commands.get(command).needs)) return client.noPerm(message, client.commands.get(command).needs);
+            client.commands.get(command).execute(message, args, client);
+        }
+    } catch(err) {
+        message.channel.send("Error Occured: " + err)
     }
 })
 
@@ -234,7 +239,6 @@ client.noPerm = function (message, perm) {
     message.channel.send(sendEm);
 }
 // Load Commands
-function loadCommands() {
     client.commands = new Discord.Collection();
     const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
     for (const file of commandFiles) {
@@ -244,8 +248,6 @@ function loadCommands() {
             client.commands.set(command.alias, command)
         }
     }
-}
-loadCommands()
 
 client.sendEmbed = function(message, client, title, desc, footer) {
     let sendEm = new Discord.MessageEmbed()

@@ -12,6 +12,7 @@
     "discord.js": "^12.5.0",
     "fs": "0.0.1-security",
     "mongodb": "^3.6.3",
+    "node-fetch": "^2.6.1",
     "xliff": "^5.3.1"
   }
 }

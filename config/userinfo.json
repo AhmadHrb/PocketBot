@@ -1,0 +1,8 @@
+{
+  "status": {
+  "online": "Online!",
+   "dnd": "Do Not Disturb",
+    "idle": "AFK",
+    "offline": "Offline!"
+  }
+}
