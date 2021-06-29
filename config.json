@@ -1,6 +1,6 @@
 {
-  "token": "NzYzMzgxMDMwMTE1MzQ0NDA0.X323_A.qNh7Lf3--jmsFb_8xmuawTq4xGM",
-  "mongodb": "mongodb+srv://AhmadHrb:zBu4R6M6Q9nN0oRA@rc.njqsz.azure.mongodb.net/rcons?authSource=admin&replicaSet=atlas-yma6xc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
+  "token": "TOKEN",
+  "mongodb": "mongodb+srv://...",
   "prefix": "t%",
   "game": "Open Source ❤️",
   "owner": "265918159335325696",
